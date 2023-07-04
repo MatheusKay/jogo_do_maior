@@ -23,7 +23,7 @@ form.addEventListener('submit', function(e){
     const aleatorio = Math.floor(100* Math.random() + 1)
     console.log(aleatorio)
 
-    const mensagemCalculada = `A soma do seu numero foi: <span>${soma}</span> e o numero gerado foi: <span>${aleatorio}</span>`
+    const mensagemCalculada = `A soma do seu número foi: <span>${soma}</span> e o número gerado foi: <span>${aleatorio}</span>`
 
     if (soma > aleatorio){
         containerCalculando.style.display = "none"
