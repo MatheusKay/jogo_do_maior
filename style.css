@@ -1,0 +1,43 @@
+body{
+    background-color: brown;
+    font: normal 16px Arial
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+main{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-sizing: 3px 3px 10px black ;
+}
+
+span{
+    font-weight: bold;
+}
+
+.mensagem{
+    padding: 6px;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+.mensagem-vitoria{
+    background-color: chartreuse;
+}
+
+.mensagem-derrota{
+    background-color: red;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: italic;
+}

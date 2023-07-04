@@ -1,0 +1,130 @@
+//Cores do site
+
+@corDeFundo: brown;
+@corBranca: white;
+@corPreta: rgba(0, 0, 0, 0.665);
+@corMensagemVitoria: rgba(128, 255, 0, 0.804);
+@corMensagemDerrota: red;
+@corDoBotao: #842222;
+@corDoCard: #cc3737;
+
+//Fontes
+
+@fontePrincipal: 'Roboto', sans-serif;
+@fonteTitulo: 'Cinzel Decorative', cursive;
+
+//Style do site
+
+body {
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    color: @corBranca;
+    text-align: center;
+    font-family: @fonteTitulo;
+    text-transform: uppercase;
+}
+
+main {
+    text-align: center;
+    background-color: @corDoCard;
+    color: @corBranca;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 10px 10px 10px 10px @corPreta;
+
+    section {
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            font-size: 1em;
+            margin: 16px 0 8px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 80px;
+            margin-bottom: 8px;
+            padding: 8px;
+            text-align: center;
+            border: none;
+            border-bottom: 4px solid @corBranca;
+            font-size: 1.5em;
+            background-color: transparent;
+            color: @corBranca;
+
+            &:focus {
+                box-shadow: 0;
+                outline: 0;
+            }
+        }
+
+        button {
+            padding: 16px;
+            margin-top: 24px;
+            width: 160px;
+            font-size: 1em;
+            font-weight: bold;
+            color: @corBranca;
+            background-color: @corDoBotao;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px @corPreta;
+            cursor: pointer;
+
+            &:hover {
+                background-color: @corDeFundo;
+            }
+        }
+
+    }
+
+    .calculando {
+        font-size: 0.9em;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #res {
+        .mensagem {
+            padding: 6px;
+            border-radius: 10px;
+            display: none;
+            margin-top: 16px;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: @corBranca;
+    margin-top: 44px;
+}
+
+.mensagem-vitoria {
+    background-color: @corMensagemVitoria;
+}
+
+.mensagem-derrota {
+    background-color: @corMensagemDerrota;
+}
+
+span {
+    font-weight: bold;
+}
